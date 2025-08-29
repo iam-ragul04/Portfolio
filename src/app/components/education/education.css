@@ -1,0 +1,162 @@
+#education {
+  padding: 3rem 2rem;
+  background: #f8f9fa; /* Match your site’s theme */
+}
+
+#education h2 {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  color: #6A1B9A; /* Your original purple */
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Align cards to the left */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 0; /* Align to left */
+  margin-right: auto;
+}
+
+/* Card styling with semi-transparent gradient */
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  background: transparent;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Bottom line effect */
+.education-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(to right, #6a1b9a, #ab47bc); /* Purple gradient */
+  transition: width 0.3s ease;
+}
+
+/* Hover triggers underline */
+.education-card:hover::after {
+  width: 100%;
+}
+
+.edu-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.edu-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #070707;
+  margin-bottom: 0.3rem;
+}
+
+.edu-content h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #6A1B9A;
+  margin-bottom: 0.8rem;
+}
+
+.edu-content ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #191818;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edu-logo {
+    margin-bottom: 1rem;
+  }
+
+  .edu-content ul {
+    text-align: left;
+  }
+
+  #education h2 {
+    text-align: center;
+  }
+
+  .education-container {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.education-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  padding-left: 0; /* Removed left padding */
+  border-left: none; /* Removed the dash */
+}
+
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  background: transparent;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Bottom line hover effect */
+.education-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(to right, #6a1b9a, #ab47bc);
+  transition: width 0.3s ease;
+}
+
+.education-card:hover::after {
+  width: 100%;
+}
